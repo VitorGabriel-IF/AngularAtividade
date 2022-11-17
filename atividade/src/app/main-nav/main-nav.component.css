@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*:not(mat-icon){
+  font-family: 'Poppins', sans-serif;
+}
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 210px;
+}
+
+/* .sidenav .mat-toolbar {
+  background: inherit;
+} */
+.mat-toolbar.mat-primary:not(button) {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+}
+.color{
+  background-color: crimson;
+}
+.mat-toolbar .title{
+  position: absolute;
+  left: 3em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.group{
+  display: flex;
+  align-items: center;
+}
+.icon{
+  margin-right: -30px;
+}
+mat-toolbar ul{
+  position: relative;
+  margin-left: 900px;
+  display: flex;
+  gap: 40px;
+}
+mat-toolbar ul li{
+  list-style: none;
+}
+mat-toolbar ul li a{
+  position: relative;
+  text-decoration: none;
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+mat-toolbar ul li a::before{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform  0.5s ease-in-out;
+  transform-origin: right;
+}
+mat-toolbar ul li a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.hidden{
+  display: none;
+}
+/* .spacer{
+  flex: 1 1 auto;
+} */
+
+@media (max-width: 800px){
+  mat-toolbar .navigation{
+    display: none;
+  }
+  .icon{
+    margin-right: -250px;
+  }
+}
+.side-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding-left: 40px;
+  
+  
+}
+mat-nav-list ul li:nth-child(1){
+  list-style: none;
+  padding-left: 30px;
+}
+mat-nav-list ul li:not(:nth-child(1)){
+  list-style: none;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+mat-nav-list ul li a{
+  position: relative;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}

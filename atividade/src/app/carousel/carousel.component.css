@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+div{
+    margin-bottom: 200px;
+}
